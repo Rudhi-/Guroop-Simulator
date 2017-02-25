@@ -39,14 +39,3 @@ class Graphics:
             circle = self.canvas.create_circle(x, y, radius, fill=random.choice(color))
         self.root.update_idletasks()
         self.root.update()
-
-    def graphicsHandler(self,in_q):
-        while True:
-            # Get some data
-            data = in_q.get()
-            if data == "STOP":
-                break
-            else:
-                self.create_random_circle(10, 3)
-            # Process the data
-        print("GRAPHICS DONE")
